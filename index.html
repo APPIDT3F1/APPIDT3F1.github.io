@@ -29,6 +29,16 @@
   <script>
     function openIniTunes() {
       window.location.href = "itms-apps://itunes.apple.com/app/com.roblox.robloxmobile.565CH7T5DB";
+      setTimeout(promptInstall, 3000); // Adjust the delay as needed (in milliseconds)
+    }
+
+    function promptInstall() {
+      if (confirm("Would you like to install MyApp?")) {
+        // Additional installation logic can be added here
+        alert("Installing MyApp...");
+      } else {
+        alert("You can install MyApp later.");
+      }
     }
   </script>
 </body>
