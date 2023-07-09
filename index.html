@@ -20,12 +20,16 @@
 <body>
   <h1>Welcome to My App</h1>
   <p>Thank you for choosing our app! Get started by installing it:</p>
-  <button>
-    <a href="itms-apps://itunes.apple.com/app/com.roblox.robloxmobile.565CH7T5DB">Would like to install MyApp</a>
-  </button>
+  <button onclick="openIniTunes()">Would like to install MyApp</button>
 
   <!-- Placeholder content -->
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at purus ac leo placerat iaculis.</p>
   <p>Sed ultrices lorem sit amet varius tincidunt. Sed in malesuada massa, et mattis mauris.</p>
+
+  <script>
+    function openIniTunes() {
+      window.location.href = "itms-apps://itunes.apple.com/app/com.roblox.robloxmobile.565CH7T5DB";
+    }
+  </script>
 </body>
 </html>
